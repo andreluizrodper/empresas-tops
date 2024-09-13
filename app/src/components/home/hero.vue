@@ -5,11 +5,12 @@
       Já trabalhou em uma empresa que tinha umas coisas diferenciadas
       acontecendo?
     </p>
-    <div>
+    <div class="flex gap-4">
       <Button as-child>
-        <router-link :to="{ name: 'wizard' }">
-          Compartilhar a sua expêriencia
-        </router-link>
+        <router-link :to="{ name: 'abuse' }"> Relatar um abuso </router-link>
+      </Button>
+      <Button as-child>
+        <router-link :to="{ name: 'wizard' }"> Fazer uma denúncia </router-link>
       </Button>
     </div>
   </div>

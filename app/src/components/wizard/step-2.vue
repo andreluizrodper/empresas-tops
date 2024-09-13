@@ -11,7 +11,7 @@
     <div class="min-w-80 flex-1 flex items-center justify-center py-6 px-4">
       <Card class="max-w-md w-full">
         <CardHeader>
-          <CardTitle>Vamos aos fatos</CardTitle>
+          <CardTitle>Fazendo uma denúncia</CardTitle>
           <CardDescription>Resumo da denúncia</CardDescription>
         </CardHeader>
         <CardContent class="flex flex-col gap-8">

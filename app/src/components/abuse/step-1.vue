@@ -11,7 +11,7 @@
     <div class="min-w-80 flex-1 flex items-center justify-center py-6 px-4">
       <Card class="max-w-md w-full">
         <CardHeader>
-          <CardTitle>Fazendo uma denúncia</CardTitle>
+          <CardTitle>Relatar um abuso</CardTitle>
           <CardDescription>Primeiro qual o CNPJ da empresa</CardDescription>
         </CardHeader>
         <CardContent>
