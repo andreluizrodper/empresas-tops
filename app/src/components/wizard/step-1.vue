@@ -83,13 +83,21 @@ export default {
   },
   methods: {
     goToNext() {
-      this.$store.commit("setData", { cnpj: this.cnpj });
+      this.$store.commit("setData", {
+        cnpj: this.cnpj,
+        name: this.company.nome_fantasia,
+      });
       this.$emit("toggleStep", 1);
     },
     async getCompany() {
       console.log(this.cnpj, this.cnpj.length);
-      if (this.cnpj.length === 14) return;
-      await fetch(`https://brasilapi.com.br/api/cnpj/v1/${this.cnpj}`)
+      if (this.cnpj.length === 18) return;
+      await fetch(
+        `https://brasilapi.com.br/api/cnpj/v1/${this.cnpj.replace(
+          /[.|//|-]/g,
+          ""
+        )}`
+      )
         .then((data) => data.json())
         .then((data) => (this.company = data))
         .then(() => (this.hasCompany = true))

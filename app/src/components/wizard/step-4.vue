@@ -2,11 +2,6 @@
   <div class="min-h-[100vh] flex flex-col">
     <div class="flex flex-col gap-2 py-2 px-4">
       <p class="text-2xl text-gray-400">Empresas tops</p>
-      <router-link
-        :to="{ name: 'home' }"
-        class="flex gap-1 text-sm items-center"
-        ><ChevronLeft size="14" /> Sair</router-link
-      >
     </div>
     <div class="min-w-80 flex-1 flex items-center justify-center py-6 px-4">
       <Card class="max-w-md w-full">

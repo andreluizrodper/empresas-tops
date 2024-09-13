@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import store from "@/store";
 
 const collection = "issue";
-const api = "https://api.coupligbetter.com";
+const api = "https://empresas-tops-api.vercel.app";
 
 const createIssue = async ({ data }) => {
   try {
@@ -31,11 +31,6 @@ const getIssue = async () => {
           field: "archived",
           operator: "==",
           value: false,
-        },
-        {
-          field: "couple_id",
-          operator: "==",
-          value: store.state.account.couple_id,
         },
       ],
       order: [{ field: "created_at", type: "DESC" }],

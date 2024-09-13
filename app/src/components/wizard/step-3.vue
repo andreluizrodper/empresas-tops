@@ -89,6 +89,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
+import { ChevronLeft } from "lucide-vue-next";
 
 export default {
   components: {
@@ -103,6 +104,7 @@ export default {
     CardContent,
     CardFooter,
     Switch,
+    ChevronLeft,
   },
   data() {
     return {
