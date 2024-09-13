@@ -27,7 +27,9 @@
             v-if="hasCompany"
             class="border mt-4 px-4 py-2 flex flex-col gap-2"
           >
-            <span class="text-xl font-bold">{{ company.nome_fantasia }}</span>
+            <span class="text-xl font-bold">{{
+              company.nome_fantasia || this.company.razao_social
+            }}</span>
             <span class="text-sm text-gray-600">{{ company.municipio }}</span>
           </div>
         </CardContent>
@@ -85,7 +87,7 @@ export default {
     goToNext() {
       this.$store.commit("setData", {
         cnpj: this.cnpj,
-        name: this.company.nome_fantasia,
+        name: this.company.nome_fantasia || this.company.razao_social,
       });
       this.$emit("toggleStep", 1);
     },
